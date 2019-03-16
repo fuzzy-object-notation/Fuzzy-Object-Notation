@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <h1>{{ msg }}</h1>
-    <button v-on:click="count()">count:{{btmsg}}</button>
+    <h1>{{ msg }} {{love}}</h1>
+    <button v-on:click="count()" class="mdc-fab" aria-label="Favorite">
+      <span class="mdc-fab__icon material-icons">favorite</span>
+    </button>
   </div>
 </template>
 
@@ -10,13 +12,13 @@ export default {
   name: "app",
   data() {
     return {
-      msg: "Welcome to Your Vue.js App!",
-      btmsg: 0
+      msg: "How Much You Love Fuzzy Object Notation? ",
+      love: 0
     };
   },
   methods: {
     count: function() {
-      this.btmsg += 1;
+      this.love += 1;
     }
   }
 };
