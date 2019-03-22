@@ -68,3 +68,6 @@ dist/
 
 #
 build/
+
+#
+data/
